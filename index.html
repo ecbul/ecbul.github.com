@@ -6,7 +6,7 @@
 		<title>Bu</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>
-		var yol = "https://unutulmazfilmler.pw/micmacs-tire-larigot.html";
+		var yol = "https://cors-anywhere.herokuapp.com/http://unutulmazfilmler.pw/micmacs-tire-larigot.html";
 		$.get(yol, function(response){
 			let regx = /iframe src="(.*?)"/g;
 			let iframelink = regx.exec(response)[1];
