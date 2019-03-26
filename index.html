@@ -1,0 +1,24 @@
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+	<head>
+		<title>Bu</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+		var yol = "http://unutulmazfilmler.pw/micmacs-tire-larigot.html";
+		$.get(yol, function(response){
+			let regx = /iframe src="(.*?)"/g;
+			let iframelink = regx.exec(response)[1];
+			iframelink = "https:" + iframelink;
+			console.log(iframelink);
+		
+		})
+		
+		</script>
+    </head>
+	
+    <body>
+		
+	</body>
+</html>
